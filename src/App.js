@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { Logo } from "./Components/Logo/index";
 import { ListOfCategories } from "./Components/ListOfCategories/index";
 import { ListOfPhotoCard } from "./Container/ListOfPhotoCards";
-import { PhotoCardWithQuery } from "./Container/PhotoCardWithQuery";
 
 // Styles
 import { GlobalStyle } from "./Components/Styles/GlobalStyle";
@@ -17,7 +16,7 @@ export const App = () => {
       <GlobalStyle />
       <Logo />
       {detailId ? (
-        <PhotoCardWithQuery id={detailId} />
+        <p>Aquí van los detalles de la imagen</p>
       ) : (
         <Fragment>
           <ListOfCategories />
