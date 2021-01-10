@@ -5,6 +5,7 @@ import { ListOfPhotoCard } from "./Container/ListOfPhotoCards";
 
 // Styles
 import { GlobalStyle } from "./Components/Styles/GlobalStyle";
+import { Category } from "./Components/Category";
 
 export const App = () => {
   const urlParams = new window.URLSearchParams(window.location.search);
@@ -20,7 +21,7 @@ export const App = () => {
       ) : (
         <Fragment>
           <ListOfCategories />
-          <ListOfPhotoCard categoryId={1} />
+          <ListOfPhotoCard categoryId={Category.id} />
         </Fragment>
       )}
     </>
